@@ -4,15 +4,15 @@
 # the first 10 terms will be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-def fab(num1,num2,sumofnum,result):
-    if(sumofnum<4000000):
+def fab(num1,num2,sumofnum,result): # Defining the function
+    if(sumofnum<4000000): # Check wether number is less than 4 million
         sumofnum = num1 + num2
-        if sumofnum%2==0:
-            value.append(sumofnum)
-        num1 = num2
+        if sumofnum%2==0: # Check if number is even or odd
+            value.append(sumofnum) # If even append the number
+        num1 = num2 # Changing the value of elements
         num2 = sumofnum
-        fab(num1,num2,sumofnum,result)
-    return sum(value)
-value = [2]
-answer = fab(1,2,0,2)
-print(answer)
+        fab(num1,num2,sumofnum,result) # Calling function again
+    return sum(value) # Return sum of even fibonacci numbers
+value = [2] 
+answer = fab(1,2,0,2) # Function call
+print(answer) # Print answer or sum of even fibonacci numbers
