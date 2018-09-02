@@ -61,6 +61,6 @@ primenum.reverse()
 for primeNumber in primenum:
     if 600851475143%primeNumber==0:
         print(primeNumber)
+        break;
 # This program can be developed, if we can make a list of prime numbers starting with 2 and keep dividing a number with prime number 
 # to get next prime number. 
-        break;
